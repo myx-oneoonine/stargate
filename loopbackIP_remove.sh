@@ -5,7 +5,7 @@
 
 welcome(){
 
-  echo "Do you need to remove loopback IP from this interface?(y/n)"
+  echo "Do you want to remove loopback IP from \033[0;31m$interfaceName\033[0m? (y/n)"
   read need
   case "$need" in
     y)
@@ -24,14 +24,15 @@ welcome(){
 }
 
 yes(){
-  aliasIP=$(cat loopbackIP_add.sh | grep "sudo.*ifconfig.*alias" | sed 's/sudo ifconfig.*alias//')
 
-  for ip in $aliasIP; do
-    sudo ifconfig $interfaceName -alias "$ip"
-    echo "removed alias $ip"
+  aliasIP=$(cat ip | grep "^\d" | sed 's/:.*//' | sort | uniq)
+
+  for ip in $aliasIP ; do
+    sudo ifconfig $interfaceName -alias $ip
+    echo "removed alias $ip from $interfaceName"
   done
 
-  echo "disabled interface $interfaceName"
+  # echo "disabled interface $interfaceName"
   # sudo ifconfig "$interfaceName" down
 }
 
