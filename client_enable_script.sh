@@ -9,12 +9,12 @@ hamachiIp="25.23.7.185"
 
 commandSSH=""
 
-for c in $config do
+for c in $config ; do
   source=$(echo $c | sed 's/--.*//')
   target=$hamachiIp:$(echo $c | sed 's/.*--//')
   commandSSH="$commandSSH -L $source:$target"
 done
 
-commandSSH="ssh $commandSSH $user@0.0.0.0"
-echo $commandSSH
+commandSSH="ssh -fN $commandSSH $user@0.0.0.0"
+# echo $commandSSH
 sudo $commandSSH
