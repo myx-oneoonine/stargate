@@ -18,3 +18,4 @@ done
 commandSSH="ssh -fN $commandSSH $user@0.0.0.0"
 # echo $commandSSH
 sudo $commandSSH
+echo $(ps -ef | grep ssh.*$(echo $(cat ip | head -1 | sed 's/:.*//')))
