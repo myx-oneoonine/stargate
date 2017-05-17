@@ -2,6 +2,7 @@
 
 ##you must change mod this script first
 ##chmod a+x client_enable_script.sh
+##require open ssh (sharing Remote Login) 
 
 user=$(whoami)
 config=$(cat ip)
