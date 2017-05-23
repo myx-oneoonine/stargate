@@ -89,6 +89,11 @@ netsh interface portproxy add v4tov4 listenaddress=	%hamachi_ip%	 listenport=	50
 netsh interface portproxy add v4tov4 listenaddress=	%hamachi_ip%	 listenport=	50080	 connectaddress=	10.13.81.39	 connectport=	8103
 netsh interface portproxy add v4tov4 listenaddress=	%hamachi_ip%	 listenport=	50081	 connectaddress=	10.252.64.129	 connectport=	6100
 netsh interface portproxy add v4tov4 listenaddress=	%hamachi_ip%	 listenport=	50082	 connectaddress=	10.13.174.77	 connectport=	6100
+netsh interface portproxy add v4tov4 listenaddress=	%hamachi_ip%	 listenport=	50083	 connectaddress=	10.15.33.45	 connectport=	80
+netsh interface portproxy add v4tov4 listenaddress=	%hamachi_ip%	 listenport=	50084	 connectaddress=	10.13.84.72	 connectport=	443
+netsh interface portproxy add v4tov4 listenaddress=	%hamachi_ip%	 listenport=	50085	 connectaddress=	10.13.84.71	 connectport=	443
+netsh interface portproxy add v4tov4 listenaddress=	%hamachi_ip%	 listenport=	50086	 connectaddress=	172.16.20.132	 connectport=	3389
+netsh interface portproxy add v4tov4 listenaddress=	%hamachi_ip%	 listenport=	50087	 connectaddress=	172.16.20.133	 connectport=	3389
 
 
 
