@@ -61,6 +61,11 @@ netsh interface ipv4 add address "%loopbackName%" 	172.16.249.243	 255.255.255.0
 netsh interface ipv4 add address "%loopbackName%" 	10.13.81.39	 255.255.255.0
 netsh interface ipv4 add address "%loopbackName%" 	10.252.64.129	 255.255.255.0
 netsh interface ipv4 add address "%loopbackName%" 	10.13.174.77	 255.255.255.0
+netsh interface ipv4 add address "%loopbackName%" 	10.13.84.71	 255.255.255.0
+netsh interface ipv4 add address "%loopbackName%" 	10.13.84.72	 255.255.255.0
+netsh interface ipv4 add address "%loopbackName%" 	172.16.20.132	 255.255.255.0
+netsh interface ipv4 add address "%loopbackName%" 	172.16.20.133	 255.255.255.0
+netsh interface ipv4 add address "%loopbackName%" 	10.15.33.45	 255.255.255.0
 
 
 
