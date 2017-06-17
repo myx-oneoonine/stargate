@@ -1,6 +1,9 @@
 @echo off
 setlocal enabledelayedexpansion
 
+SET mypath=%~dp0
+cd /d %mypath:~0,-1%
+
 netsh interface portproxy reset
 
 SET /P hamachi_ip=enter hamachi server IP :

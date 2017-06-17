@@ -1,6 +1,9 @@
 @echo off
 setlocal enabledelayedexpansion
 
+SET mypath=%~dp0
+cd /d %mypath:~0,-1%
+
 SET /P loopbackName=enter your loopback adaper name :
 echo your loopback adaper name is "%loopbackName%".
 netsh interface set interface name="%loopbackName%" admin=enable
