@@ -3,6 +3,7 @@ setlocal enabledelayedexpansion
 
 SET /P loopbackName=enter your loopback adaper name :
 echo your loopback adaper name is "%loopbackName%".
+netsh interface set interface name="%loopbackName%" admin=enable
 
 set prev=
 for /f "delims=" %%F in ('sort ip') do (
